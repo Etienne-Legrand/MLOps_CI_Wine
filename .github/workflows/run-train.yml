@@ -36,8 +36,3 @@ jobs:
         path: |
           feature_importance.png
           residuals.png
-
-    - name: Download plots
-      uses: actions/download-artifact@v4.1.1
-      with:
-        name: plots
