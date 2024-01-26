@@ -26,14 +26,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    
     - name: Run train script
       run: python train.py
       
-    - name: Display visualization
-      run: |
-        import matplotlib.pyplot as plt
-        plt.show()
     - name: Archive plots
       uses: actions/upload-artifact@v2
       with:
